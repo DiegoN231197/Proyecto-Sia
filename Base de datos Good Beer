@@ -1,0 +1,15 @@
+CREATE DATABASE Good Beer;
+USE Good Beer;
+
+CREATE TABLE Se distribuye(cod_sedistribuye INT PRIMARY KEY, descripcion VARCHAR(100),valor_caja INT, cod_cerveza INT FOREING KEY, cod_local INT FOREING KEY,cod_fecha INT FOREING KEY);
+
+CREATE TABLE Fecha(cod_fecha INT PRIMARY KEY, descripcion VARCHAR(50));
+
+CREATE TABLE Cerveza(cod_cerveza INT PRIMARY KEY,nombre VARCHAR(50), precio INT, tipo VARCHAR(50),cod_sabor INT FOREING KEY,cod_caducidad INT FOREING KEY);
+
+CREATE TABLE Sabor(cod_sabor INT PRIMARY KEY, tipo varchar(50),descripcion VARCHAR(50));
+
+CREATE TABLE Local(cod_local INT PRIMARY KEY, rut INT, nombre VARCHAR(50),direccion VARCHAR(100),telefono INT);
+
+CREATE TABLE Empleado(cod_empleado INT PRIMARY KEY, rut INT, nombre VARCHAR(50),direccion VARCHAR(100),telefono INT);
+
