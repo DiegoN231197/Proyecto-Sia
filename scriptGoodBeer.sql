@@ -52,7 +52,7 @@ CREATE TABLE Cerveza(
         ON DELETE CASCADE,
     caducidad_cod INT,
     FOREIGN KEY (caducidad_cod)
-        REFERENCES Caducidad(cod_Caducidad)
+        REFERENCES Caducidad(cod_caducidad)
         ON DELETE CASCADE
 );
 
