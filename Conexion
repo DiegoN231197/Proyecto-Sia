@@ -1,0 +1,30 @@
+package ConexionSQL;
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Cristobal
+ */
+public class conexionSQL {
+    Connection conectar=null;
+    
+    public Connection conexion(){
+        
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            conectar= (Connection)DriverManager.getConnection("jdbc:mysql://localhost/GoodBeer?serverTimezone=UTC","",""); // (base, user, pass)
+            JOptionPane.showMessageDialog(null,"Conexion exitosa a la base de datos");
+            
+            
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null,"Conexion fallida"+e.getMessage());
+            
+        }
+        return conectar;
+    }
+    
+}
