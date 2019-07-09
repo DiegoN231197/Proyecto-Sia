@@ -48,11 +48,11 @@ insert into Sedistribuye Values(8003,'descripcion',16000,7003,3003,1003);
 insert into Sedistribuye Values(8004,'descripcion',19000,7004,3004,1004);
 insert into Sedistribuye Values(8005,'descripcion',17000,7005,3005,1005);
 
-insert into MateriaPrima Values(9001,'agua','liquido','descripcion',2500,4001);
-insert into MateriaPrima Values(9002,'lupulo','solido','descripcion',2600,4002);
-insert into MateriaPrima Values(9003,'cebada','solido','descripcion',3200,4003);
-insert into MateriaPrima Values(9004,'levadura','solido','descripcion',3100,4004);
-insert into MateriaPrima Values(9005,'botellas','solido','descripcion',1500,4005);
+insert into MateriaPrima Values(9001,'Agua','liquido','descripcion',2500,4001);
+insert into MateriaPrima Values(9002,'Lupulo','solido','descripcion',2600,4002);
+insert into MateriaPrima Values(9003,'Cebada','solido','descripcion',3200,4003);
+insert into MateriaPrima Values(9004,'Levadura','solido','descripcion',3100,4004);
+insert into MateriaPrima Values(9005,'Botellas','solido','descripcion',1500,4005);
 
 insert into Compone Values(10001,50,'descripcion',7001,9001);
 insert into Compone Values(10002,30,'descripcion',7002,9002);
@@ -60,19 +60,17 @@ insert into Compone Values(10003,20,'descripcion',7003,9003);
 insert into Compone Values(10004,12,'descripcion',7004,9004);
 insert into Compone Values(10005,6,'descripcion',7005,9005);
 
-insert into Proveedor values(11001,"Daniel Rojas",113984759,"Alameda 4033",200,958217482,9001);
-insert into Proveedor values(11002,"Francisco Araya",113984759,"Baquedano 423",300,27381938,9002);
-insert into Proveedor values(11003,"Alejandro Cortes",113984759,"Los Heroes 332",400,987796572,9003);
-insert into Proveedor values(11004,"Roberto Dias",113984759,"San Joaquin 921",500,927134325,9004);
-insert into Proveedor values(11005,"Cristian Gonzalez ",105890379,"San Diego 2050",250,965728813,9005);
+insert into Proveedor values(11001,"Daniel Rojas",113984759,"Alameda 4033",200,958217482,9001,2500);
+insert into Proveedor values(11002,"Francisco Araya",113984759,"Baquedano 423",300,27381938,9002,3500);
+insert into Proveedor values(11003,"Alejandro Cortes",113984759,"Los Heroes 332",400,987796572,9003,4000);
+insert into Proveedor values(11004,"Roberto Dias",113984759,"San Joaquin 921",500,927134325,9004,5100);
+insert into Proveedor values(11005,"Cristian Gonzalez ",105890379,"San Diego 2050",250,965728813,9005,3400);
 
 insert into Crea values(12001,'descripcion',7001,5001,6001);
 insert into Crea values(12002,'descripcion',7002,5002,6002);
 insert into Crea values(12003,'descripcion',7003,5003,6003);
 insert into Crea values(12004,'descripcion',7004,5004,6004);
 insert into Crea values(12005,'descripcion',7005,5005,6005);
-
-
 
 
 
