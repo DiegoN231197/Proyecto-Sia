@@ -114,7 +114,9 @@ CREATE TABLE Proveedor(
     materiaprima_cod INT,
     FOREIGN KEY (materiaprima_cod)
         REFERENCES MateriaPrima(cod_materiaprima)
-        ON DELETE CASCADE
+        ON DELETE CASCADE,
+    precio INT
+
 );
 
 
